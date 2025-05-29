@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.ts",
   "scripts": {
-    "start": "ts-node-dev app.ts"
+    "start": "ts-node-dev app.ts",
+    "build": "rimraf dist && tsc"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -22,6 +23,7 @@
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^20.4.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "rimraf": "^5.0.5"
   }
 } 
